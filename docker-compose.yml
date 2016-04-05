@@ -1,0 +1,8 @@
+catalog-pim:
+    build : "."
+    ports:
+        - "80"
+    environment:
+       - VIRTUAL_HOST=catalog.pim
+    volumes:
+        - .:/srv/catalog-pim
