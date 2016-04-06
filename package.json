@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "production": "node_modules/.bin/webpack -p"
+    "production": "node_modules/.bin/webpack -p",
+    "start": "webpack-dev-server"
   },
   "author": "Luiz Fumes <lcfumes@gmail.com>",
   "dependencies": {
