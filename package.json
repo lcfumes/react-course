@@ -2,21 +2,26 @@
   "name": "catalog-pim",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
-    "production": "node_modules/.bin/webpack -p"
+    "production": "./node_modules/.bin/webpack -p",
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base app --inline --hot"
   },
   "author": "Luiz Fumes <lcfumes@gmail.com>",
-  "dependencies": {
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8"
-  },
-  "devDependencies": {
-    "babel-core": "^6.7.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-react": "^6.5.0",
-    "html-webpack-plugin": "^2.15.0",
-    "webpack": "^1.12.14",
+   "dependencies": {
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "axios": "^0.9.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "devDependencies": {}
 }
